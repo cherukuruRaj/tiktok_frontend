@@ -1,0 +1,10 @@
+
+
+
+
+.sticky-navbar {
+    position: sticky;
+    left: 0; /* Adjust as needed */
+    z-index: 2; /* Ensure it stays above other content */
+    padding: 16px;
+  }
