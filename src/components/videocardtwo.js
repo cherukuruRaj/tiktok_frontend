@@ -1,6 +1,4 @@
 import React, { useEffect, useState } from "react";
-import CountryFlag from "react-country-flag";
-import countryCodeLookup from "country-code-lookup";
 import Popup from "reactjs-popup";
 import "reactjs-popup/dist/index.css";
 import { IoShareOutline } from "react-icons/io5";
@@ -16,7 +14,6 @@ export const Videocardtwo = (props) => {
 
   // Access properties of the obj object
   const {
-    tweet_id,
     content,
     url,
     attached_media,
@@ -25,9 +22,9 @@ export const Videocardtwo = (props) => {
     like_count,
   } = obj;
 
-  const [nameVisibility, setNameVisibility] = useState(true);
+  const [, setNameVisibility] = useState(true);
   const [ext, setExt] = useState("");
-  const [contentDisplay, setContentDisplay] = useState(true);
+  const [, setContentDisplay] = useState(true);
 
   useEffect(() => {
     if (name !== "NONE") {

@@ -10,8 +10,6 @@ import {
   Typography,
 } from "antd";
 import {
-  faces,
-  flags,
   narrativefacefilter,
   narrativeflagfilter,
   topicfacefilter,

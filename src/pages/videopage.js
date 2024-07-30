@@ -1,9 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { Custombutton } from "../components/custombutton";
-import ReactPlayer from "react-player";
-import { Videocard } from "../components/videocard";
-import { TikTokEmbed } from "react-social-media-embed";
-import CountryFlag from "react-country-flag";
 import { Videocardtwo } from "../components/videocardtwo";
 
 import {
@@ -15,7 +10,6 @@ import {
 
 export const Videopage = (props) => {
   const [objects, setObjects] = useState([]);
-  const [narrativeObj, setNarrativeObj] = useState([]);
 
   const setReply = props.setReply;
   const setLike = props.setLike;
@@ -84,7 +78,7 @@ export const Videopage = (props) => {
     try {
       console.log("this is the filter we are sending", filter);
       let response;
-      if (filter !== "Topic" && narrativeFilter == "Narrative") {
+      if (filter !== "Topic" && narrativeFilter === "Narrative") {
         response = await fetch(
           `${backendUrl}/api/v1/topic?filter=${filter}&narrativeFilter=${narrativeFilter}&name=${name}&flag=${flag}&isCheckedVideo=${isCheckedVideo}&isCheckedImage=${isCheckedImage}`
         );
@@ -297,7 +291,7 @@ export const Videopage = (props) => {
         >
           {topics.map((topic, index) => (
             <option key={index} value={topic}>
-              {topic == "Topic" ? "TOPICS" : topic}
+              {topic === "Topic" ? "TOPICS" : topic}
             </option>
           ))}
         </select>
@@ -309,7 +303,7 @@ export const Videopage = (props) => {
         >
           {nf.map((d, index) => (
             <option key={index} value={d}>
-              {d == "Narrative" ? "Top Narratives" : d}
+              {d === "Narrative" ? "Top Narratives" : d}
             </option>
           ))}
         </select>
@@ -319,7 +313,7 @@ export const Videopage = (props) => {
           onChange={(e) => handleNameChange(e)}
           className="bg-white text-black p-2 rounded-lg text-xl border-2 border-black"
         >
-          {filter !== "Topic" && narrativeFilter == "Narrative" ? (
+          {filter !== "Topic" && narrativeFilter === "Narrative" ? (
             topicfacefilter[filter] ? (
               topicfacefilter[filter].map((name, index) => (
                 <option key={index} value={name.value}>
