@@ -1,3 +1,65 @@
+export const topics = [
+  "Topic",
+  "NUCLEAR",
+  "MISSILES",
+  "MERCENARIES",
+  "AID",
+  "WAR",
+  "SANCTIONS",
+  "ATTACKS",
+  "TERROR",
+  "CONFLICT",
+  "CRIME",
+  "CORRUPTION",
+  "COVID",
+  "NAZISM",
+  "GOVERNMENT",
+  "ECONOMY",
+  "SPACE",
+  "ROCKETS",
+  "DRONES",
+  "INTEL",
+  "BASES",
+  "ARMED FORCES",
+  "WEAPONS",
+  "DEFENSE",
+  "RESOURCES",
+  "INFRASTRUCTURE",
+  "HISTORY",
+  "CIVILIANS",
+  "DIPLOMACY",
+  "AGREEMENT",
+  "ALLIANCE",
+];
+
+export const topNarratives = [
+  "Narrative",
+  "Nuclear Tensions: Global Powers on the Brink",
+  "Russia's Battle Against Nazism for Humanity",
+  "Civilians Impacted by Ukrainian Attacks in Crimea and Sevastopol",
+  "Nazism in the Ukraine Conflict",
+  "Foreign Mercenaries in the Ukraine are Eliminated",
+  "West is Corrupt and Causes Death in Ukraine Conflict",
+  "US has Double Standards in Global Conflicts",
+  "Mercenaries and Atrocities in Ukraine",
+  "Nazism and the Bandera Ideology in Ukraine Conflict",
+  "Biden Family's Foreign Influence and Corruption",
+  "US Rejects Peace Deal Despite Americans Desire",
+  "Global Push for Ceasefire",
+  "So-Called 'Humanitarian' Aid in Global Conflicts",
+  "Swiss Peace Summit Highlights Divisions Over Ukraine War",
+  "China's Advocacy for a Political Settlement in the Ukraine Crisis",
+  "Ukraine's Unit No. 110: Horrifying Crimes Against Humanity",
+  "NATO will Punish China",
+  "Laurent Brayard warns French Mercenaries in Ukraine",
+  "Diplomatic Efforts for Peace in Nizhny Novgorod",
+  "Key Nations Refuse to Sign Final Declaration",
+];
+
+export const faces = ["Faces"];
+
+export const flags = ["Flags"];
+
 export const topicfacefilter = {
   Topic: [
     {
@@ -234,6 +296,18 @@ export const topicfacefilter = {
       value: "joe_biden",
     },
   ],
+  DRONES: [
+    {
+      name: "Faces",
+      number: "",
+      value: "Faces",
+    },
+    {
+      name: "Volodymyr Zelensky",
+      number: "1",
+      value: "volodymyr_zelenskyy",
+    },
+  ],
   CIVILIANS: [
     {
       name: "Faces",
@@ -338,6 +412,21 @@ export const topicfacefilter = {
       name: "Xi Jinping",
       number: "1",
       value: "xi_jinping",
+    },
+    {
+      name: "Donald Trump",
+      number: "3",
+      value: "donald_trump",
+    },
+    {
+      name: "Joe Biden",
+      number: "5",
+      value: "joe_biden",
+    },
+    {
+      name: "Hunter Biden",
+      number: "1",
+      value: "hunter_biden",
     },
   ],
   COVID: [
@@ -704,6 +793,26 @@ export const topicfacefilter = {
       number: "",
       value: "faces",
     },
+    {
+      name: "Volodymyr Zelensky",
+      number: "1",
+      value: "volodymyr_zelenskyy",
+    },
+    {
+      name: "Lin Jian",
+      number: "1",
+      value: "lin_jian",
+    },
+    {
+      name: "Kim Jong-un",
+      number: "1",
+      value: "kim_jong",
+    },
+    {
+      name: "Vladimir Putin",
+      number: "1",
+      value: "vladimir_putin",
+    },
   ],
   INFRASTRUCTURE: [
     {
@@ -1028,7 +1137,7 @@ export const topicfacefilter = {
     },
     {
       name: "Donald Trump",
-      number: "1",
+      number: "2",
       value: "donald_trump",
     },
   ],
@@ -1074,6 +1183,16 @@ export const topicfacefilter = {
       name: "Joe Biden",
       number: "1",
       value: "joe_biden",
+    },
+    {
+      name: "Vladimir Putin",
+      number: "1",
+      value: "vladimir_putin",
+    },
+    {
+      name: "Lloyd Austin",
+      number: "1",
+      value: "lloyd_austin",
     },
   ],
   RESOURCES: [
@@ -1135,6 +1254,16 @@ export const topicfacefilter = {
       name: "Lloyd Austin",
       number: "1",
       value: "lloyd_austin",
+    },
+    {
+      name: "Volodymyr Zelensky",
+      number: "2",
+      value: "volodymyr_zelenskyy",
+    },
+    {
+      name: "Jens Stoltenberg",
+      number: "1",
+      value: "jen_stoltenberg",
     },
   ],
   SANCTIONS: [
@@ -2052,8 +2181,18 @@ export const topicflagfilter = {
     },
     {
       name: "United States",
-      number: "1",
+      number: "2",
       value: "usa",
+    },
+    {
+      name: "Ukraine",
+      number: "2",
+      value: "ukraine",
+    },
+    {
+      name: "Israel",
+      number: "1",
+      value: "israel",
     },
   ],
   COVID: [
@@ -2296,6 +2435,24 @@ export const topicflagfilter = {
       value: "ukraine",
     },
   ],
+  HISTORY: [
+    {
+      name: "Flags",
+      number: "",
+      value: "flags",
+    },
+    {
+      name: "Russia",
+      number: "1",
+      value: "russia",
+    },
+    {
+      name: "Ukraine",
+      number: "1",
+      value: "ukraine",
+    },
+  ],
+
   INFRASTRUCTURE: [
     {
       name: "Flags",
@@ -2592,22 +2749,15 @@ export const topicflagfilter = {
       number: "",
       value: "flags",
     },
-  ],
-  RESOURCES: [
-    {
-      name: "Flags",
-      number: "",
-      value: "flags",
-    },
-    {
-      name: "United States",
-      number: "1",
-      value: "usa",
-    },
     {
       name: "Ukraine",
-      number: "2",
+      number: "1",
       value: "ukraine",
+    },
+    {
+      name: "Israel",
+      number: "2",
+      value: "israel",
     },
   ],
   SANCTIONS: [
