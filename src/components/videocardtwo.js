@@ -3,10 +3,10 @@ import "reactjs-popup/dist/index.css";
 import { FaRegHeart } from "react-icons/fa";
 import { FaRegComment } from "react-icons/fa";
 import { BiRepost } from "react-icons/bi";
-import { AimOutlined, LinkOutlined } from "@ant-design/icons";
+import { LinkOutlined } from "@ant-design/icons";
 import "./videocardtwo.css";
 import ReactPlayer from "react-player";
-import { Card, Col, Flex, Image, Modal, Typography } from "antd";
+import { Card, Flex, Image, Modal, Typography } from "antd";
 import Meta from "antd/es/card/Meta";
 import Link from "antd/es/typography/Link";
 import XIcon from "../assets/icons/x-icon.svg";
@@ -150,13 +150,15 @@ export const Videocardtwo = (props) => {
                     title="Open Tweet"
                   />
                 </Link>
-                <AimOutlined
-                  className="custom-bloom-effect"
+                <Typography.Text
+                  className="custom-bloom-effect cursor-pointer"
                   width={18}
                   style={{ color: "#FFFFFF73" }}
                   onClick={showModal}
                   title="Media Summary"
-                />
+                >
+                  ...
+                </Typography.Text>
               </Flex>
             </Flex>
           </Card>
