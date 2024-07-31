@@ -1,8 +1,52 @@
-.sticky-navbar {
-    position: sticky;
-    left: 0;
-    /* Adjust as needed */
-    z-index: 2;
-    /* Ensure it stays above other content */
-    padding: 16px;
+/* CUSTOM SCROLLBAR */
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 4px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #7483A0;
+    border-radius: 4px;
+    min-height: 50px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #B0C2E4;
+}
+
+.custom-bloom-effect:hover {
+    filter: drop-shadow(0px 0px 7px rgba(234, 241, 253, 0.7)) !important
+}
+
+.my-masonry-grid {
+    display: -webkit-box;
+    /* Not needed if autoprefixing */
+    display: -ms-flexbox;
+    /* Not needed if autoprefixing */
+    display: flex;
+    margin-left: -10px;
+    /* gutter size offset */
+    width: auto;
+    overflow-y: auto;
+}
+
+.my-masonry-grid_column {
+    padding-left: 23px;
+    /* gutter size */
+    background-clip: padding-box;
+}
+
+/* Style your items */
+.my-masonry-grid_column>div {
+    /* change div to reference your elements you put in <Masonry> */
+    background: grey;
+    margin-bottom: 23px;
 }

@@ -302,11 +302,6 @@ export const topicfacefilter = {
       number: "",
       value: "Faces",
     },
-    {
-      name: "Volodymyr Zelensky",
-      number: "1",
-      value: "volodymyr_zelenskyy",
-    },
   ],
   CIVILIANS: [
     {
@@ -420,7 +415,7 @@ export const topicfacefilter = {
     },
     {
       name: "Joe Biden",
-      number: "5",
+      number: "4",
       value: "joe_biden",
     },
     {
@@ -792,16 +787,6 @@ export const topicfacefilter = {
       name: "Faces",
       number: "",
       value: "faces",
-    },
-    {
-      name: "Volodymyr Zelensky",
-      number: "1",
-      value: "volodymyr_zelenskyy",
-    },
-    {
-      name: "Lin Jian",
-      number: "1",
-      value: "lin_jian",
     },
     {
       name: "Kim Jong-un",
@@ -2186,7 +2171,7 @@ export const topicflagfilter = {
     },
     {
       name: "Ukraine",
-      number: "2",
+      number: "1",
       value: "ukraine",
     },
     {

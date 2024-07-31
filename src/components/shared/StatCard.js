@@ -6,7 +6,7 @@ const StatCard = (props) => {
     <Statistic
       title={props.title}
       value={props.count}
-      className="bg-[#141414] text-center w-1/3 mr-6 last-of-type:mr-0 p-4"
+      className="bg-[#141414] rounded text-center w-full mr-6 last-of-type:mr-0 p-4"
     />
   );
 };
